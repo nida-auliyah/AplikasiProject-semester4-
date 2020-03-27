@@ -1,6 +1,6 @@
 package id.ac.polinema.aplikasiproject;
 
-import android.se.omapi.Session;
+import id.ac.polinema.aplikasiproject.models.Session;
 
 import id.ac.polinema.aplikasiproject.models.A;
 
@@ -15,5 +15,9 @@ public class Application extends android.app.Application{
 
     public static Session getSession() {
         return session;
+    }
+
+    public static A getAccount() {
+        return account;
     }
 }

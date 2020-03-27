@@ -25,8 +25,8 @@ public class SaveActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            item = extras.getParcelable(MainActivity.CATEGORY_KEY);
-            index = extras.getInt(MainActivity.INDEX_KEY, 0);
+            item = extras.getParcelable(CategoryActivity.CATEGORY_KEY);
+            index = extras.getInt(CategoryActivity.INDEX_KEY, 0);
             categoryInput.setText(item.getCategory());
         }
     }
@@ -41,8 +41,8 @@ public class SaveActivity extends AppCompatActivity {
             item.setCategory(category);
 
             Intent intent = new Intent();
-            intent.putExtra(MainActivity.CATEGORY_KEY, item);
-            intent.putExtra(MainActivity.INDEX_KEY, index);
+            intent.putExtra(CategoryActivity.CATEGORY_KEY, item);
+            intent.putExtra(CategoryActivity.INDEX_KEY, index);
             setResult(RESULT_OK, intent);
             finish();
         }
