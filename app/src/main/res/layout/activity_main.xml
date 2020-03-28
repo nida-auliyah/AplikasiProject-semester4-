@@ -27,7 +27,7 @@
         android:text="ListLink"
         android:textAlignment="center"
         android:textSize="30dp"
-        android:onClick="handlecontinue"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,6 +41,7 @@
         android:background="@drawable/btn_red_medium"
         android:text="Continue"
         android:textAllCaps="false"
+        android:onClick="handlecontinue"
         android:textColor="@android:color/background_light"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"

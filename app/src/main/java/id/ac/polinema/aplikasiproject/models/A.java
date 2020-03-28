@@ -7,12 +7,10 @@ import java.util.List;
 
 public class A {
     private String name;
-    private int balance;
     private List<Category> categories;
 
     public A(String name) {
         this.name = name;
-        this.balance = 0;
         this.categories = new ArrayList<>();
     }
 
@@ -24,9 +22,6 @@ public class A {
         this.name = name;
     }
 
-    public int getBalance() {
-        return balance;
-    }
 
     public List<Category> getCategory() {
         return categories;
